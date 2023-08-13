@@ -4,7 +4,7 @@ export function usePopularPeople ({ page }) {
   const [people, setPeople] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/bestpeople', {
+    fetch('https://movify-9w6t.onrender.com/bestpeople', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

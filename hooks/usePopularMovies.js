@@ -5,7 +5,7 @@ export function usePopularMovies ({ page }) {
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/bestmovies', {
+    fetch('https://movify-9w6t.onrender.com/bestmovies', {
       method: 'POST',
       header: {
         'Content-Type': 'application/json'

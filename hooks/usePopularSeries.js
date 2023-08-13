@@ -5,7 +5,7 @@ export function usePopularSeries ({ page }) {
   const [series, setSeries] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/bestseries', {
+    fetch('https://movify-9w6t.onrender.com/bestseries', {
       method: 'POST',
       header: {
         'Content-Type': 'application/json'
